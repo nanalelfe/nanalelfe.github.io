@@ -80,7 +80,7 @@ hr {
     max-width: 100%;
 }
 
-.about-title h1, .portfolio-title h1, .resume-title h1{
+.about-title h1, .portfolio-title h1, .resume-title h1, .contact-title h1{
     text-transform: uppercase !important;
     font-weight: 500;
     font-size: 50px;
