@@ -76,7 +76,7 @@ hr {
     max-width: 100%;
 }
 
-.about-title h1{
+.about-title h1, .portfolio-title h1{
     text-transform: uppercase !important;
     font-weight: 500;
     font-size: 50px;
@@ -84,3 +84,63 @@ hr {
     line-height: 50px;
 }
 
+.download {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    background: none;
+    border-color: #E24E42;
+    border-width: medium;
+    margin-top: 8%;
+    margin-left: 25%;
+}
+
+/*------------ Asides ----------------------*/
+
+aside.languages {
+    background-image: url(../images/roof.jpg);
+}
+
+aside.prog-lang {
+    background-image: url(../images/cave.jpg);
+}
+
+aside {
+    min-height: 600px;
+    text-align: center;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    margin-bottom: 50px;
+}
+
+aside h1, aside h2 {
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, .9);
+}
+
+.aside-text {
+    padding-top: 8%;
+}
+
+h1.aside-title {
+    text-transform: uppercase;
+    margin-bottom: 5%;
+}
+
+/*------------- Portfolio ---------------*/
+
+.thumbnail {
+    padding: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+.thumbnail img {
+    min-height: 300px;
+}
+
+
+.caption {
+    margin: 4px;
+}
