@@ -13,6 +13,7 @@ body {
 a {
     text-decoration: none;
     outline:none;
+    color: #545454;
 }
 
 p {
@@ -110,7 +111,7 @@ hr {
     line-height: 50px;
 }
 
-button.download, button.source-code, button.back-btn {
+a.download, a.source-code, a.back-btn {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     background: none;
@@ -200,13 +201,16 @@ h1.aside-title {
 }
 
 
-a.btn-info, a.btn-info:hover, a.btn-info:after, a.btn-info:focus {
+.thumbnails a.btn-info,
+.thumbnails a.btn-info:hover,
+.thumbnails a.btn-info:after,
+.thumbnails a.btn-info:focus {
     color: #fff;
     background-color: inherit;
     border-color: inherit;
 }
 
-a.btn {
+.thumbnails a.btn {
     border-radius: 0px;
     border: none;
     padding: 0;
@@ -219,15 +223,15 @@ a.btn {
     transition: height 1s ease;
 }
 
-button.source-code, button.back-btn {
+a.source-code, a.back-btn {
     margin: 0;
 }
 
-button.source-code {
+a.source-code {
     border-color: #DCB239;
 }
 
-button.back-btn {
+a.back-btn {
     margin-left: 10px;
 }
 
