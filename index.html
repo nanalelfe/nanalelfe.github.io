@@ -21,6 +21,8 @@
               integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
               crossorigin="anonymous">
 
+        <link rel="icon" href="assets/images/sailboat.png">
+
     </head>
     <body>
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -39,11 +41,11 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="main-nav">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#header" class="scroll-link" data-id="header">Home</a></li>
-                    <li><a class="scroll-link" data-id="about">About</a></li>
-                    <li><a class="scroll-link" data-id="portfolio">Portfolio</a></li>
-                    <li><a class="scroll-link" data-id="resume">Resume</a></li>
-                    <li><a class="scroll-link" data-id="contact">Contact</a></li>
+                    <li><a href="#header" class="scroll-link" data-id="header">Home</a></li>
+                    <li><a href="#about" class="scroll-link" data-id="about">About</a></li>
+                    <li><a href="#portfolio" class="scroll-link" data-id="portfolio">Portfolio</a></li>
+                    <li><a href="#resume" class="scroll-link" data-id="resume">Resume</a></li>
+                    <li><a href="#contact" class="scroll-link" data-id="contact">Contact</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -60,35 +62,39 @@
     <main>
         <section id="about">
             <div class="container">
-                <div class="about-title">
+                <div class="about-title row">
                     <h1>About me</h1>
                     <hr>
-                    <h2>Nana Nosirova</h2>
-                    <h4>Student at University of Toronto</h4>
+                    <div class="col-md-6">
+                        <h2>Nana Nosirova</h2>
+                        <h4>Student at University of Toronto</h4>
+                    </div>
+                    <div class="col-md-6">
+                        <a class="btn btn-lg download pull-right" type="submit"><i class="fa fa-download" aria-hidden="true"></i> Download Resume</a>
+                    </div>
+
+
                 </div>
                 <div class="row">
                     <div class="col-sm-6 col-md-6 col-lg-6">
                         <img src="assets/images/kid2.jpg" alt="Nana's picture" class="profile-pic">
-                        <a class="btn btn-lg download" type="submit"><i class="fa fa-download" aria-hidden="true"></i> Download Resume</a>
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-6">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <p>I am a Junior U of T student pursuing a Bachelor's degree in Computer Science with a focus in
+                            Computer Systems and Artificial Intelligence. I am passionate about robots, AI and virtual reality.
+                            Building products that were initially just scribbles on whiteboard, abstract diagrams and vague
+                            ideas are my true calling.
                         </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <p>I am currently working, along with my partners, on a project which will help U of T students
+                            with their exam preparations.
                         </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <p>I grew up in Europe, mostly London and Paris, where I learned to speak both English and French
+                            fluently, before coming to Toronto at the age of 16. I feel very lucky to have been raised in
+                            such a diverse environment, and I enjoy observing the similarities and differences between
+                            various cultures. I use French, Russian, Uzbek and English interchangeably, and have taken
+                            Spanish in school. As for my hobbies, I enjoy playing the piano, reading French literature
+                            and kayaking.
+
                         </p>
 
                     </div>
@@ -98,19 +104,19 @@
         </section>
 
         <aside class="languages">
-            <div class="container">
-                <div class="aside-text">
-                    <h1 class="aside-title">Languages</h1>
-
-                    <h2>English: fluent</h2>
-                    <h2>French: fluent</h2>
-                    <h2>Russian: fluent</h2>
-                    <h2>Uzbek: fluent</h2>
-                    <h2>Spanish: beginner</h2>
+            <div class="panel">
+                <div class="container">
+                    <div class="aside-text">
+                        <h1 class="aside-title">Languages</h1>
+                        <h2>English: fluent</h2>
+                        <h2>French: fluent</h2>
+                        <h2>Russian: fluent</h2>
+                        <h2>Uzbek: fluent</h2>
+                        <h2>Spanish: beginner</h2>
+                    </div>
                 </div>
-
-
             </div>
+
         </aside>
 
         <section id="portfolio">
@@ -120,10 +126,26 @@
                     <hr>
                 </div>
                 <div class="row thumbnails">
+                    <!-- Thumbnail -->
                     <div class="col-sm-6 col-md-6">
-                        <a type="button" class="btn btn-info thumb-collapse scroll-link" data-id="projects" data-toggle="collapse" data-target="#space-buster">
+                        <a type="button" class="btn btn-info thumb-collapse scroll-link" data-id="projects"
+                           data-toggle="collapse" data-target="#solutions-repo">
                             <div class="thumbnail">
-                                <img class='img-responsive' src="assets/images/space_thumb.png" alt="Space buster">
+                                <!-- Project Image -->
+                                <img class='img-responsive' src="assets/images/solutions_repo.png" alt="Solutions.Repo">
+                                <!-- Project Description -->
+                                <div class="caption">
+                                    <h4>Solutions.Repo</h4>
+                                    <p>Project Description</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <a type="button" class="btn btn-info thumb-collapse scroll-link" data-id="projects"
+                           data-toggle="collapse" data-target="#space-buster">
+                            <div class="thumbnail">
+                                <img class='img-responsive' src="assets/images/space_thumb.png" alt="Space buster!">
                                 <div class="caption">
                                     <h4>Space buster!</h4>
                                     <p>Project Description</p>
@@ -131,13 +153,65 @@
                             </div>
                         </a>
                     </div>
-
+                </div>
+                <div class="row thumbnails">
+                    <!-- Thumbnail -->
                     <div class="col-sm-6 col-md-6">
-                        <a type="button" class="btn btn-info thumb-collapse scroll-link" data-id="projects" data-toggle="collapse" data-target="#solutions-repo">
+                        <a type="button" class="btn btn-info thumb-collapse scroll-link" data-id="projects"
+                           data-toggle="collapse" data-target="#breakout">
                             <div class="thumbnail">
-                                <img class='img-responsive' src="assets/images/space_thumb.png" alt="Space buster">
+                                <!-- Project Image -->
+                                <img class='img-responsive' src="assets/images/breakout.gif" alt="Breakout">
+                                <!-- Project Description -->
                                 <div class="caption">
-                                    <h4>Project name</h4>
+                                    <h4>Breakout</h4>
+                                    <p>Project Description</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Thumbnail -->
+                    <div class="col-sm-6 col-md-6">
+                        <a type="button" class="btn btn-info thumb-collapse scroll-link" data-id="projects"
+                           data-toggle="collapse" data-target="#tictactoe">
+                            <div class="thumbnail">
+                                <!-- Project Image -->
+                                <img class='img-responsive' src="assets/images/tictactoe.png" alt="Tic Tac Toe">
+                                <!-- Project Description -->
+                                <div class="caption">
+                                    <h4>Tic Tac Toe - Minimax</h4>
+                                    <p>Project Description</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row thumbnails">
+                    <!-- Thumbnail -->
+                    <div class="col-sm-6 col-md-6">
+                        <a type="button" class="btn btn-info thumb-collapse scroll-link" data-id="projects"
+                           data-toggle="collapse" data-target="#nyt-api">
+                            <div class="thumbnail">
+                                <!-- Project Image -->
+                                <img class='img-responsive' src="assets/images/nyt.png" alt="New York Times Restful API">
+                                <!-- Project Description -->
+                                <div class="caption">
+                                    <h4>The New York Times - RESTful API</h4>
+                                    <p>Project Description</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Thumbnail -->
+                    <div class="col-sm-6 col-md-6">
+                        <a type="button" class="btn btn-info thumb-collapse scroll-link" data-id="projects"
+                           data-toggle="collapse" data-target="#personal-website">
+                            <div class="thumbnail">
+                                <!-- Project Image -->
+                                <img class='img-responsive' src="assets/images/portfolio.png" alt="Personal Portfolio Website">
+                                <!-- Project Description -->
+                                <div class="caption">
+                                    <h4>nanalelfe.github.io</h4>
                                     <p>Project Description</p>
                                 </div>
                             </div>
@@ -149,17 +223,25 @@
                         <div class="project collapse" id="space-buster">
                             <div class="project-title">
                                 <div class="col-md-6">
+                                    <!-- Project Name -->
                                     <h2>Space Buster!</h2>
                                 </div>
                                 <div class="col-md-6">
-                                    <a type="button" class="btn btn-lg back-btn pull-right"><i class="fa fa-level-up" aria-hidden="true"></i> Back to Projects</a>
-                                    <a type="button" class="btn btn-lg source-code pull-right" type="submit"><i class="fa fa-code" aria-hidden="true"></i> Source Code</a>
+                                    <a data-id="portfolio" type="button" class="btn btn-lg back-btn pull-right scroll-link">
+                                        <i class="fa fa-level-up" aria-hidden="true"></i> Back to Projects</a>
+
+                                    <!-- Project Source Code link -->
+                                    <a href="https://github.com/nanalelfe/space_buster" target="_blank" type="button" class="btn btn-lg
+                                    source-code pull-right" type="submit"><i class="fa fa-code" aria-hidden="true"></i> Source Code</a>
                                 </div>
 
                             </div>
                             <div class="col-md-6">
 
+                                <!-- Project Image -->
                                 <img class='img-responsive' src="assets/images/space_thumb.png" alt="Space buster">
+
+                                <!-- What I'm proud of-->
                                 <h4>What I am proud of: </h4> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
@@ -167,26 +249,27 @@
                             </div>
 
                             <div class="col-md-6">
+                                <!-- What it's about -->
                                 <h4>What it's about: </h4> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
+                                <!-- What my role was -->
                                 <h4>What my role was: </h4> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
+                                <!-- What I learnt -->
                                 <h4>What I learnt from the project: </h4> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
+                                <!-- What differently -->
                                 <h4> What I would do differently: </h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
-
                             </div>
-
-
                         </div>
 
                         <div class="project collapse" id="solutions-repo">
@@ -195,7 +278,10 @@
                                     <h2>Solutions.Repo</h2>
                                 </div>
                                 <div class="col-md-6">
-                                    <a type="button" class="btn btn-lg source-code pull-right" type="submit">Source Code</a>
+                                    <a data-id="portfolio" type="button" class="btn btn-lg back-btn pull-right scroll-link">
+                                        <i class="fa fa-level-up" aria-hidden="true"></i> Back to Projects</a>
+                                    <a href="https://github.com/HumairAK/solutions_repo" target="_blank" type="button" class="btn btn-lg
+                                    source-code pull-right" type="submit"><i class="fa fa-code" aria-hidden="true"></i> Source Code</a>
                                 </div>
 
                             </div>
@@ -227,9 +313,217 @@
 
 
                             </div>
-
-
                         </div>
+
+                        <div class="project collapse" id="breakout">
+                            <div class="project-title">
+                                <div class="col-md-6">
+                                    <!-- Project Name -->
+                                    <h2>Breakout</h2>
+                                </div>
+                                <div class="col-md-6">
+                                    <a data-id="portfolio" type="button" class="btn btn-lg back-btn pull-right scroll-link">
+                                        <i class="fa fa-level-up" aria-hidden="true"></i> Back to Projects</a>
+
+                                    <!-- Project Source Code link -->
+                                    <a href="https://github.com/nanalelfe/space_buster" target="_blank" type="button" class="btn btn-lg
+                                    source-code pull-right" type="submit"><i class="fa fa-code" aria-hidden="true"></i> Source Code</a>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+
+                                <!-- Project Image -->
+                                <img class='img-responsive' src="assets/images/breakout.gif" alt="Breakout">
+
+                                <!-- What I'm proud of-->
+                                <h4>What I am proud of: </h4> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+                            </div>
+
+                            <div class="col-md-6">
+                                <!-- What it's about -->
+                                <h4>What it's about: </h4> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+                                <!-- What my role was -->
+                                <h4>What my role was: </h4> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+                                <!-- What I learnt -->
+                                <h4>What I learnt from the project: </h4> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+                                <!-- What differently -->
+                                <h4> What I would do differently: </h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+                            </div>
+                        </div>
+
+                        <div class="project collapse" id="tictactoe">
+                            <div class="project-title">
+                                <div class="col-md-6">
+                                    <!-- Project Name -->
+                                    <h2>Tic Tac Toe - Minimax</h2>
+                                </div>
+                                <div class="col-md-6">
+                                    <a data-id="portfolio" type="button" class="btn btn-lg back-btn pull-right scroll-link">
+                                        <i class="fa fa-level-up" aria-hidden="true"></i> Back to Projects</a>
+
+                                    <!-- Project Source Code link -->
+                                    <a href="https://github.com/nanalelfe/space_buster" target="_blank" type="button" class="btn btn-lg
+                                    source-code pull-right" type="submit"><i class="fa fa-code" aria-hidden="true"></i> Source Code</a>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+
+                                <!-- Project Image -->
+                                <img class='img-responsive' src="assets/images/tictactoe.png" alt="Tic Tac Toe">
+
+                                <!-- What I'm proud of-->
+                                <h4>What I am proud of: </h4> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+                            </div>
+
+                            <div class="col-md-6">
+                                <!-- What it's about -->
+                                <h4>What it's about: </h4> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+                                <!-- What my role was -->
+                                <h4>What my role was: </h4> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+                                <!-- What I learnt -->
+                                <h4>What I learnt from the project: </h4> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+                                <!-- What differently -->
+                                <h4> What I would do differently: </h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+                            </div>
+                        </div>
+
+                        <div class="project collapse" id="nyt-api">
+                            <div class="project-title">
+                                <div class="col-md-6">
+                                    <!-- Project Name -->
+                                    <h2>N.Y.T. - RESTful API</h2>
+                                </div>
+                                <div class="col-md-6">
+                                    <a data-id="portfolio" type="button" class="btn btn-lg back-btn pull-right scroll-link">
+                                        <i class="fa fa-level-up" aria-hidden="true"></i> Back to Projects</a>
+
+                                    <!-- Project Source Code link -->
+                                    <a href="https://github.com/nanalelfe/nyt_api" target="_blank" type="button" class="btn btn-lg
+                                    source-code pull-right" type="submit"><i class="fa fa-code" aria-hidden="true"></i> Source Code</a>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+
+                                <!-- Project Image -->
+                                <img class='img-responsive' src="assets/images/nyt.png" alt="The New York Times Restful API">
+
+                                <!-- What I'm proud of-->
+                                <h4>What I am proud of: </h4> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+                            </div>
+
+                            <div class="col-md-6">
+                                <!-- What it's about -->
+                                <h4>What it's about: </h4> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+                                <!-- What my role was -->
+                                <h4>What my role was: </h4> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+                                <!-- What I learnt -->
+                                <h4>What I learnt from the project: </h4> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+                                <!-- What differently -->
+                                <h4> What I would do differently: </h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+                            </div>
+                        </div>
+
+                        <div class="project collapse" id="personal-website">
+                            <div class="project-title">
+                                <div class="col-md-6">
+                                    <!-- Project Name -->
+                                    <h2>nanalelfe.github.io</h2>
+                                </div>
+                                <div class="col-md-6">
+                                    <a data-id="portfolio" type="button" class="btn btn-lg back-btn pull-right scroll-link">
+                                        <i class="fa fa-level-up" aria-hidden="true"></i> Back to Projects</a>
+
+                                    <!-- Project Source Code link -->
+                                    <a href="https://github.com/nanalelfe/nanalelfe.github.io" target="_blank" type="button" class="btn btn-lg
+                                    source-code pull-right" type="submit"><i class="fa fa-code" aria-hidden="true"></i> Source Code</a>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+
+                                <!-- Project Image -->
+                                <img class='img-responsive' src="assets/images/portfolio.png" alt="Personal Portfolio Website">
+
+                                <!-- What I'm proud of-->
+                                <h4>What I am proud of: </h4> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+                            </div>
+
+                            <div class="col-md-6">
+                                <!-- What it's about -->
+                                <h4>What it's about: </h4> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+                                <!-- What my role was -->
+                                <h4>What my role was: </h4> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+                                <!-- What I learnt -->
+                                <h4>What I learnt from the project: </h4> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+                                <!-- What differently -->
+                                <h4> What I would do differently: </h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
 
@@ -238,14 +532,47 @@
         </section>
 
         <aside class="prog-lang">
+            <div class="panel">
+                <div class="container">
+                    <div class="aside-text">
+                        <h1 class="aside-title">Programming Experience</h1>
+                        <div class="col-md-6">
+                            <div class="bars">
+                                <ul class="skills">
+                                    <li><span class="bar java pull-left small"><em>Java</em></span></li>
+                                    <li><span class="bar c pull-left small"><em>C</em></span></li>
+                                    <li><span class="bar python pull-left small"><em>Python</em></span></li>
+                                    <li><span class="bar javascript pull-left small"><em>Javascript</em></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="bars">
+                                <ul class="skills">
+                                    <li><span class="bar html-css pull-left small"><em>HTML5/CSS3</em></span></li>
+                                    <li><span class="bar node pull-left small"><em>Node.js</em></span></li>
+                                    <li><span class="bar jquery pull-left small"><em>JQuery</em></span></li>
+                                    <li><span class="bar android pull-left small"><em>Android</em></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
         </aside>
 
         <section id="resume">
             <div class="container">
-                <div class="resume-title">
-                    <h1>My Resume</h1>
-                    <hr>
+                <div class="resume-title row">
+                    <div class="col-md-6">
+                        <h1>My Resume</h1>
+                        <hr>
+                    </div>
+                    <div class="col-md-6">
+                        <a class="btn btn-lg download pull-right" type="submit"><i class="fa fa-download" aria-hidden="true"></i> Download Resume</a>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-6 col-md-6 col-lg-6">
@@ -255,11 +582,11 @@
                                 <h3>University of Toronto - St George Campus</h3>
                                 <h4>Bachelor of Science (BSc), Computer Science</h4>
                                 <h6>2014 - Present</h6>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                </p>
+                                <ul>
+                                    <li>Focus in Computer Systems and Artificial Intelligence (Machine Learning & Knowledge Representation and Reasoning).</li>
+                                    <li>Entrance Scholarship, University of Toronto - Award for students with an admission average of 92% or higher.</li>
+                                    <li>William Waters Commerce and Finance Award, University of Toronto - Awarded for academic excellence.</li>
+                                </ul>
 
                             </div>
                         </div>
@@ -269,24 +596,28 @@
                             <h2 class="resume-item-title"><i class="fa fa-compass" aria-hidden="true"></i> Skills</h2>
                             <div class="programming">
                                 <div class="col-sm-6 col-md-6 col-lg-6">
-                                    <h4>Programming Languages</h4>
+                                    <h4>General</h4>
                                     <ul>
                                         <li>Java</li>
                                         <li>Python</li>
                                         <li>C</li>
                                         <li>Javascript</li>
+                                        <li>Android</li>
                                         <li>Bash</li>
 
                                     </ul>
+
+                                    <h4>Databases</h4>
+                                    <ul>
+                                        <li>MongoDB</li>
+                                    </ul>
                                 </div>
                                 <div class="col-sm-6 col-md-6 col-lg-6">
-                                    <h4>Front-end</h4>
+                                    <h4>Web</h4>
                                     <ul>
                                         <li>HTML5/CSS3</li>
-                                    </ul>
-                                    <h4>Frameworks</h4>
-                                    <ul>
-                                        <li>Android</li>
+                                        <li>jQuery</li>
+                                        <li>Node.js</li>
                                         <li>Bootstrap</li>
                                     </ul>
 
@@ -405,6 +736,9 @@
         </section>
 
         <aside class="hobbies">
+            <div class="panel">
+
+            </div>
         </aside>
 
         <section id="contact">
@@ -431,7 +765,7 @@
                             <h3><i class="fa fa-question-circle-o" aria-hidden="true"></i> F.A.Q.</h3>
 
                             <h5>Are you available for a full-time or part-time position?</h5>
-                            <p class="small">Yes.</p>
+                            <p class="small">Yes, starting May 2017.</p>
 
                             <h5>Why should we hire you?</h5>
                             <p class="small">Cause I'm awesome.</p>

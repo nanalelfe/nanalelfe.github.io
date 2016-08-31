@@ -13,7 +13,6 @@ body {
 a {
     text-decoration: none;
     outline:none;
-    color: #545454;
 }
 
 p {
@@ -95,12 +94,17 @@ hr {
 
 /*----------------- About -----------------*/
 
+#about a, #portfolio a {
+    color: #545454;
+}
+
 .profile-pic {
     max-width: 100%;
 }
 
 #about {
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .about-title h1, .portfolio-title h1, .resume-title h1, .contact-title h1{
@@ -117,8 +121,12 @@ a.download, a.source-code, a.back-btn {
     background: none;
     border-color: #84D8C0;
     border-width: medium;
-    margin-top: 8%;
-    margin-left: 25%;
+    margin-top: 15px;
+
+}
+
+#about a.download {
+    margin-top: 0px;
 }
 
 /*------------ Asides ----------------------*/
@@ -132,14 +140,20 @@ aside {
     color: white;
 }
 
+
 aside.languages {
     background-image: url(../images/roof.jpg);
+
 }
 
 aside.prog-lang {
     background-image: url(../images/emm_college.jpg);
     min-height: 400px;
     margin-bottom: 0;
+}
+
+aside.prog-lang .aside-text {
+    padding-top: 5%;
 }
 
 aside.hobbies{
@@ -151,7 +165,7 @@ aside.hobbies{
 
 aside h1, aside h2 {
     color: white;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, .9);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
 }
 
 .aside-text {
@@ -163,6 +177,104 @@ h1.aside-title {
     margin-bottom: 5%;
 }
 
+aside .panel {
+    min-height: 600px;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 0;
+}
+
+/*----- Bars ---------*/
+.bars {
+    font-weight: 700;
+}
+
+.bars ul li{
+    list-style: none;
+}
+
+.bars li {
+    margin-bottom: 60px;
+    background: #dddddd;
+    height: 40px;
+    border-radius: 3px;
+}
+
+.bars li em {
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    color: white;
+    float: left;
+    padding-left: 15px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
+}
+
+.bar {
+    margin: 0;
+    background: #E9B000;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 3px 0 0 3px;
+
+}
+
+.java {
+    width: 80%;
+    -moz-animation: java 2s ease;
+    -webkit-animation: java 2s ease;
+}
+
+.c {
+    width: 50%;
+    -moz-animation: c 2s ease;
+    -webkit-animation: c 2s ease;
+}
+
+
+.python {
+    width: 60%;
+    -moz-animation: python 2s ease;
+    -webkit-animation: python 2s ease;
+}
+
+
+.javascript {
+    width: 70%;
+    -moz-animation: javascript 2s ease;
+    -webkit-animation: javascript 2s ease;
+}
+
+
+.html-css {
+    width: 80%;
+    -moz-animation: html-css 2s ease;
+    -webkit-animation: html-css 2s ease;
+}
+
+
+.node {
+    width: 60%;
+    -moz-animation: node 2s ease;
+    -webkit-animation: node 2s ease;
+}
+
+
+.jquery {
+    width: 60%;
+    -moz-animation: jquery 2s ease;
+    -webkit-animation: jquery 2s ease;
+}
+
+
+.android {
+    width: 50%;
+    -moz-animation: android 2s ease;
+    -webkit-animation: android 2s ease;
+}
+
+
 
 /*------------- Portfolio ---------------*/
 
@@ -170,6 +282,7 @@ h1.aside-title {
     padding-top: 50px;
     margin-bottom: 50px;
 }
+
 
 .thumb-collapse {
     margin-bottom: 20px;
