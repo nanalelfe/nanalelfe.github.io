@@ -114,7 +114,7 @@ hr {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     background: none;
-    border-color: #E24E42;
+    border-color: #57BC90;
     border-width: medium;
     margin-top: 8%;
     margin-left: 25%;
@@ -177,7 +177,7 @@ h1.aside-title {
 }
 
 .thumbnail img {
-    min-height: 300px;
+    min-height: 500px;
 }
 
 
