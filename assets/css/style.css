@@ -115,7 +115,7 @@ hr {
     line-height: 50px;
 }
 
-a.download, a.source-code, a.back-btn {
+a.download, a.source-code{
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     background: none;
@@ -306,7 +306,8 @@ aside .panel {
 }
 
 #projects {
-    padding-top: 75px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .project img {
@@ -336,17 +337,12 @@ aside .panel {
     transition: height 1s ease;
 }
 
-a.source-code, a.back-btn {
-    margin: 0;
-}
-
 a.source-code {
+    margin: 0;
     border-color: #DCB239;
 }
 
-a.back-btn {
-    margin-left: 10px;
-}
+
 
 span.in-progress {
     color: #DF744A;
