@@ -60,7 +60,7 @@ hr {
 }
 
 
-    /*-------------- Cover ------------------*/
+/*-------------- Cover ------------------*/
 .cover-img {
     min-height: 795px;
     text-align: center;
@@ -110,7 +110,7 @@ hr {
     line-height: 50px;
 }
 
-button.download, button.source-code {
+button.download, button.source-code, button.back-btn {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     background: none;
@@ -170,11 +170,18 @@ h1.aside-title {
     margin-bottom: 50px;
 }
 
+.thumb-collapse {
+    margin-bottom: 20px;
+}
+
 .thumbnail {
     padding: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    outline: 0 none;
+    margin: 0;
 }
+
 
 .thumbnail img {
 
@@ -191,6 +198,7 @@ h1.aside-title {
 .project img {
     margin-bottom: 25px;
 }
+
 
 a.btn-info, a.btn-info:hover, a.btn-info:after, a.btn-info:focus {
     color: #fff;
@@ -211,10 +219,19 @@ a.btn {
     transition: height 1s ease;
 }
 
-button.source-code {
-    border-color: #DCB239;
+button.source-code, button.back-btn {
     margin: 0;
 }
+
+button.source-code {
+    border-color: #DCB239;
+}
+
+button.back-btn {
+    margin-left: 10px;
+}
+
+
 /*------------ Resume ----------------*/
 
 #resume, #contact {
