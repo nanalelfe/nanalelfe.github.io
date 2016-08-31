@@ -117,11 +117,13 @@ aside.languages {
 aside.prog-lang {
     background-image: url(../images/emm_college.jpg);
     min-height: 400px;
+    margin-bottom: 0;
 }
 
 aside.hobbies{
     background-image: url(../images/robarts.jpg);
     min-height: 400px;
+    margin-bottom: 0;
 }
 
 
@@ -142,6 +144,9 @@ h1.aside-title {
 
 /*------------- Portfolio ---------------*/
 
+#portfolio  {
+}
+
 .thumbnail {
     padding: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -159,16 +164,17 @@ h1.aside-title {
 
 /*------------ Resume ----------------*/
 
-#resume {
-    background: #f7f7f7;
-    margin-bottom: 100px;
+#resume, #contact {
+    background-color: #e4e4ec;
+    padding-bottom: 100px;
+    padding-top: 50px;
 
 }
 
-.resume-item, .course {
+.resume-item, .course, .contact-info {
     background-color: #F5F5F5;
     border: 1px solid #CCCCCC;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 5px;
     float: left;
     margin-left: 15px;
     padding: 10px 30px;
@@ -180,14 +186,15 @@ h1.aside-title {
     width: 100%;
     padding-bottom: 0;
 }
+
+.contact-info h5 {
+    padding-bottom: 0;
+}
+
 .resume-item-title {
     color: #363636;
     font-weight: normal;
     text-transform: uppercase;
-}
-
-.coursework {
-    margin-top: 30px;
 }
 
 img.icon {
@@ -206,3 +213,52 @@ img.icon {
 .row-three {
     margin-bottom: 15px;
 }
+
+
+/*------------ Contact ---------------*/
+
+.btn-lg {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 3px;
+}
+
+.send-contact {
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 70%;
+    border: none;
+    background-color: #57BC90;
+
+}
+
+textarea.form-control {
+    max-width: 70%;
+    border: none;
+    border-radius: 0px;
+    font-size:15px !important;
+}
+
+input.form-control{
+    border: none;
+    outline: none;
+    font-size:15px !important;
+}
+
+
+.input-group, .form-group{
+    margin-bottom: 15px;
+}
+
+.input-group {
+    min-width: 70%;
+}
+
+.contact-info {
+    width: 70%;
+}
+
+.coursework {
+    margin-top: 30px;
+}
+
