@@ -1,7 +1,8 @@
 /*-------------- General ------------------*/
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    position:relative;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
     color: #545454;
     background-color: #F5F5F5;
@@ -40,7 +41,26 @@ hr {
     margin-left: 0;
 }
 
-/*-------------- Cover ------------------*/
+/*-------------- Navbar ---------------*/
+
+.navbar {
+    font-family: 'Raleway', sans-serif;
+    border-bottom: 0.3px solid #EAE3EA;
+}
+
+.navbar-nav > li > a {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: #EFEFEF;
+
+}
+
+
+    /*-------------- Cover ------------------*/
 .cover-img {
     min-height: 795px;
     text-align: center;
@@ -71,7 +91,6 @@ hr {
 .cover-text > h4 {
     color: white;
 }
-
 
 /*----------------- About -----------------*/
 
@@ -278,5 +297,4 @@ input.form-control{
 
 footer {
     padding: 30px;
-    background-color: white;
 }
