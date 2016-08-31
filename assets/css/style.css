@@ -348,6 +348,9 @@ a.back-btn {
     margin-left: 10px;
 }
 
+span.in-progress {
+    color: #DF744A;
+}
 
 /*------------ Resume ----------------*/
 
