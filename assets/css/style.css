@@ -110,11 +110,11 @@ hr {
     line-height: 50px;
 }
 
-.download {
+button.download, button.source-code {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     background: none;
-    border-color: #57BC90;
+    border-color: #84D8C0;
     border-width: medium;
     margin-top: 8%;
     margin-left: 25%;
@@ -177,14 +177,44 @@ h1.aside-title {
 }
 
 .thumbnail img {
-    min-height: 500px;
-}
 
+}
 
 .caption {
     margin: 4px;
 }
 
+#projects {
+    padding-top: 75px;
+}
+
+.project img {
+    margin-bottom: 25px;
+}
+
+a.btn-info, a.btn-info:hover, a.btn-info:after, a.btn-info:focus {
+    color: #fff;
+    background-color: inherit;
+    border-color: inherit;
+}
+
+a.btn {
+    border-radius: 0px;
+    border: none;
+    padding: 0;
+
+}
+
+#portfolio .collapsing {
+    -webkit-transition: height 1s ease;
+    -o-transition: height 1s ease;
+    transition: height 1s ease;
+}
+
+button.source-code {
+    border-color: #DCB239;
+    margin: 0;
+}
 /*------------ Resume ----------------*/
 
 #resume, #contact {
@@ -194,7 +224,7 @@ h1.aside-title {
 
 }
 
-.resume-item, .course, .contact-info {
+.resume-item, .course, .contact-info, .project {
     background-color: #F5F5F5;
     border: 1px solid #CCCCCC;
     border-radius: 5px;

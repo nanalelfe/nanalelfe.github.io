@@ -1,5 +1,9 @@
 function main() {
 
+    $('.thumb-collapse').on('click',function(){
+        $('.collapse').collapse('hide');
+    })
+
     $('body').scrollspy({ target: '.navbar', offset: 70 });
 
     $('.scroll-link').on('click', function(event){
@@ -12,6 +16,7 @@ function main() {
         event.preventDefault();
         $('#main-nav').toggleClass("open");
     });
+
 }
 
 
