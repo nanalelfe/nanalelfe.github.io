@@ -35,7 +35,7 @@ hr {
     margin-left: auto;
     margin-right: auto;
     height: 8px;
-    background-color: #E24E42;
+    background-color: #F7882F;
     border: 0 none;
     margin-left: 0;
 }
@@ -52,7 +52,6 @@ hr {
     -moz-background-size: cover;*/
     background-size: cover;
     /*-o-background-size: cover;*/
-    margin-bottom: 100px;
 }
 
 .cover-text {
@@ -78,6 +77,10 @@ hr {
 
 .profile-pic {
     max-width: 100%;
+}
+
+#about {
+    padding-top: 50px;
 }
 
 .about-title h1, .portfolio-title h1, .resume-title h1, .contact-title h1{
@@ -107,7 +110,6 @@ aside {
     background-position: center;
     background-size: cover;
     color: white;
-    margin-bottom: 50px;
 }
 
 aside.languages {
@@ -145,6 +147,8 @@ h1.aside-title {
 /*------------- Portfolio ---------------*/
 
 #portfolio  {
+    padding-top: 50px;
+    margin-bottom: 50px;
 }
 
 .thumbnail {
@@ -255,10 +259,24 @@ input.form-control{
 }
 
 .contact-info {
-    width: 70%;
+    width: 80%;
 }
 
 .coursework {
     margin-top: 30px;
 }
 
+.social-icons {
+    margin-left: 25px;
+}
+
+.social-icons a {
+    color: #EAB126;
+}
+
+/*-------- Footer -----------*/
+
+footer {
+    padding: 30px;
+    background-color: white;
+}
