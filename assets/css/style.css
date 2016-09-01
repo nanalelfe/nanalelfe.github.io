@@ -405,7 +405,7 @@ img.icon {
     border-radius: 3px;
 }
 
-.send-contact {
+button.send-contact {
     text-transform: uppercase;
     font-weight: 600;
     width: 70%;
@@ -413,6 +413,11 @@ img.icon {
     background-color: #57BC90;
 
 }
+
+button.send-contact:hover {
+    background-color: #57BC90;
+}
+
 
 textarea.form-control {
     max-width: 70%;
