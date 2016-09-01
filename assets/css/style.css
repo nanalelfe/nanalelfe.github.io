@@ -33,7 +33,6 @@ h1, h2, h3, h4, h5, h6 {
 
 hr {
     width: 100px;
-    margin-left: auto;
     margin-right: auto;
     height: 8px;
     background-color: #F7882F;
@@ -139,6 +138,24 @@ aside {
     color: white;
 }
 
+span.line {
+    display: block;
+    height: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100px;
+    background-color: #4ABDAC;
+    margin-left: 45%;
+}
+
+aside.prog-lang span.line {
+    margin-top : 10px;
+    margin-bottom: 40px;
+    width: 200px;
+    margin-left: 40%;
+}
+
+
 .parallax {
     background-attachment: fixed;
     -webkit-transition: all 0.2s ease;
@@ -180,7 +197,6 @@ aside h1, aside h2 {
 
 h1.aside-title {
     text-transform: uppercase;
-    margin-bottom: 5%;
 }
 
 aside .panel {
@@ -465,10 +481,6 @@ button.source-code, button.download {
 footer {
     padding: 30px;
 }
-
-/*.navbar {
-    background:transparent;
-}*/
 
 
 /*--------- Responsive ------------*/
