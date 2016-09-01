@@ -7,6 +7,10 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
+router.get('/contact', function(req, res, next) {
+    res.redirect('/');
+});
+
 router.post('/contact', function(req, res, next) {
   req.sanitize('name').escape();
   req.sanitize('name').trim();
@@ -35,25 +39,27 @@ router.post('/contact', function(req, res, next) {
               pass: 'lamptable'
           }
       });
-
-    var mailOptions = {
-      from: req.body.name + ' <' + req.body.email + '>',
-      to: 'nanalelfe@gmail.com',
-      subject: req.body.name + ' has contacted you through nana-nosirova.herokuapp.com',
-      text: req.body.message,
-      html: "<p>" +  req.body.message + "</p>"
-    };
-
-    transporter.sendMail(mailOptions, function (error, info) {
-      if (error) {
-          console.log(error);
-          res.render('index', {errors: "An error has occurred. Please try again."});
-      } else {
-          res.render('index', {
-              success: "Message sent."
-          });
+      var company = '';
+      if (req.body.company) {
+          company = ' from ' + req.body.company;
       }
-    });
+
+        var mailOptions = {
+            from: req.body.name + ' <' + req.body.email + '>',
+            to: 'nanalelfe@gmail.com',
+            subject: req.body.name + company + ' has contacted you through nana-nosirova.herokuapp.com - ' + req.body.email,
+            text: req.body.message,
+            html: "<p>" +  req.body.message + "</p>"
+        };
+
+        transporter.sendMail(mailOptions, function (error, info) {
+            if (error) {
+                console.log(error);
+                res.render('index', {errors: "An error has occurred. Please try again."});
+            } else {
+                res.render('index', { success: "Message sent."});
+            }
+        });
   }
 });
 
