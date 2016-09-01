@@ -64,7 +64,6 @@ hr {
 .cover-img {
     min-height: 795px;
     text-align: center;
-    background-attachment: scroll;
     background-image: url('../images/nana_blue.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -72,6 +71,13 @@ hr {
     -moz-background-size: cover;*/
     background-size: cover;
     /*-o-background-size: cover;*/
+}
+
+.parallax-bg {
+    background-attachment: fixed;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .cover-text {
@@ -130,6 +136,7 @@ a.download, a.source-code{
 }
 
 /*------------ Asides ----------------------*/
+
 
 aside {
     min-height: 600px;
@@ -218,60 +225,6 @@ aside .panel {
     line-height: 40px;
     border-radius: 3px 0 0 3px;
 
-}
-
-.java {
-    width: 80%;
-    -moz-animation: java 2s ease;
-    -webkit-animation: java 2s ease;
-}
-
-.c {
-    width: 50%;
-    -moz-animation: c 2s ease;
-    -webkit-animation: c 2s ease;
-}
-
-
-.python {
-    width: 60%;
-    -moz-animation: python 2s ease;
-    -webkit-animation: python 2s ease;
-}
-
-
-.javascript {
-    width: 70%;
-    -moz-animation: javascript 2s ease;
-    -webkit-animation: javascript 2s ease;
-}
-
-
-.html-css {
-    width: 80%;
-    -moz-animation: html-css 2s ease;
-    -webkit-animation: html-css 2s ease;
-}
-
-
-.node {
-    width: 60%;
-    -moz-animation: node 2s ease;
-    -webkit-animation: node 2s ease;
-}
-
-
-.jquery {
-    width: 60%;
-    -moz-animation: jquery 2s ease;
-    -webkit-animation: jquery 2s ease;
-}
-
-
-.android {
-    width: 50%;
-    -moz-animation: android 2s ease;
-    -webkit-animation: android 2s ease;
 }
 
 
