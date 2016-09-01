@@ -1,6 +1,5 @@
 function main() {
 
-
     /* -----------------------------------------------------------------------------------
      * Responsive for the Skills section
      * -----------------------------------------------------------------------------------*/
@@ -18,12 +17,12 @@ function main() {
     /* -----------------------------------------------------------------------------------
      * Parallax effect
      * -----------------------------------------------------------------------------------*/
-    $(window).load(function(){
+    /*$(window).load(function(){
         $('#header').parallax("50%", 0.1);
         /*$('aside.languages').parallax("40%", 0.1);
         $('aside.prog-lang').parallax("10%", 0.1);
-        $('aside.hobbies').parallax("40%", 0.1);*/
-    });
+        $('aside.hobbies').parallax("40%", 0.1);
+    });*/
 
 
 
@@ -74,6 +73,7 @@ function main() {
 
 
 }
+
 
 function scrollToSection(id, speed) {
     var section = '#' + id;
