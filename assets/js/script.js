@@ -1,5 +1,10 @@
 function main() {
 
+    if (window.location.href.indexOf('/contact') != -1) {
+        console.log("been here");
+        scrollToSection('footer', 0);
+    }
+
     $('.thumb-collapse').on('click',function(){
         $('.collapse').collapse('hide');
     });
@@ -18,6 +23,11 @@ function main() {
     });
 
 
+}
+
+function moveToSection(id, speed) {
+    var section = '#' + id;
+    var offset = $(section).offset().top - 50;
 }
 
 

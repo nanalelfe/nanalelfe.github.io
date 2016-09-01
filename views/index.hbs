@@ -25,6 +25,7 @@
 
 </head>
 <body>
+<a href="#contact" id="to-contact" class="hidden"></a>
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -613,9 +614,16 @@
                                     <li>HTML5/CSS3</li>
                                     <li>jQuery</li>
                                     <li>Node.js</li>
+                                    <li>Handlebars.js</li>
                                     <li>Bootstrap</li>
                                 </ul>
-
+                                <h4>Tools</h4>
+                                <ul>
+                                    <li>Vim</li>
+                                    <li>Eclipse</li>
+                                    <li>Webstorm</li>
+                                    <li>Wing</li>
+                                </ul>
                                 <h4>Version Control</h4>
                                 <ul>
                                     <li>Git</li>
@@ -769,7 +777,7 @@
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-6">
                     <div class="contact-form">
-                        <form action="#" method="post">
+                        <form action="/contact" method="post">
                             <div class="input-group input-group-lg">
                                 <input type="text" class="form-control" name="name" placeholder="Your name">
                             </div>
@@ -780,11 +788,22 @@
                                 <input type="text" class="form-control" name="company" placeholder="Your company (optional)">
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" placeholder="Your message" rows="10" name="solution"></textarea>
+                                <textarea class="form-control" placeholder="Your message" rows="10" name="message"></textarea>
                             </div>
                             <button class="btn-lg btn btn-primary btn-block send-contact"><span>Send</span></button>
-
                         </form>
+                        {{# if success }}
+                            <section class="success-banner">
+                                <!-- Change those to banners later -->
+                                <h4>{{ success }}</h4>
+                            </section>
+                        {{ else }}
+                            {{# if errors }}
+                                <section class="error-banner">
+                                    <h4>{{ errors }}</h4>
+                                </section>
+                            {{/if}}
+                        {{/if}}
                     </div>
                 </div>
             </div>
@@ -794,7 +813,7 @@
 
 </main>
 
-<footer>
+<footer id="footer">
     <div class="row">
         <div class="col-md-10 col-md-offset-2">
             <i class="fa fa-copyright" aria-hidden="true"></i> 2016 Nana Nosirova. <a href="#contact">Disclaimer.</a>

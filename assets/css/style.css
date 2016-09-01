@@ -452,6 +452,33 @@ input.form-control{
     color: #EAB126;
 }
 
+/*-------- Validation ----------*/
+
+.error-banner, .success-banner {
+    margin-top: 15px;
+    border-radius: 5px;
+    color: #FC4A1A;
+    padding: 10px 30px;
+    width: 70%;
+}
+
+.error-banner {
+    border: 3px solid #FC4A1A;
+}
+
+.success-banner {
+    border: 3px solid #93C178;
+}
+
+.error-banner h4 {
+    color: #FC4A1A;
+}
+
+.success-banner h4 {
+    color: #66AB8C;
+}
+
+
 /*-------- Footer -----------*/
 
 footer {
