@@ -61,23 +61,17 @@ hr {
 
 
 /*-------------- Cover ------------------*/
+
 .cover-img {
     min-height: 795px;
     text-align: center;
     background-image: url('../images/nana_blue.jpg');
-    background-position: center;
     background-repeat: no-repeat;
     /*-webkit-background-size: cover;
     -moz-background-size: cover;*/
     background-size: cover;
     /*-o-background-size: cover;*/
-}
 
-.parallax-bg {
-    background-attachment: fixed;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    transition: all 0.2s ease;
 }
 
 .cover-text {
@@ -137,14 +131,19 @@ a.download, a.source-code{
 
 /*------------ Asides ----------------------*/
 
-
 aside {
     min-height: 600px;
     text-align: center;
-    background-attachment: scroll;
-    background-position: center;
     background-size: cover;
+    background-position: center;
     color: white;
+}
+
+.parallax {
+    background-attachment: fixed;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 
@@ -237,17 +236,45 @@ aside .panel {
     margin-bottom: 0;
 }
 
+.resume-item, .course, .contact-info, .project {
+    background-color: #F5F5F5;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    float: left;
+    margin-left: 15px;
+    padding: 10px 30px;
+    position: relative;
+    width: 100%;
+}
+
+.project {
+    margin-left: 0;
+    padding-right: 15px;
+}
 
 .thumb-collapse {
     margin-bottom: 20px;
 }
 
 .thumbnail {
+    max-width: 100%;
     padding: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
     outline: 0 none;
     margin: 0;
+}
+
+.thumbnail img {
+    margin: 0;
+}
+
+.thumbail .caption {
+    max-width: 50%;
+}
+
+.btn {
+    white-space: normal;
 }
 
 .caption {
@@ -306,16 +333,7 @@ span.in-progress {
 
 }
 
-.resume-item, .course, .contact-info, .project {
-    background-color: #F5F5F5;
-    border: 1px solid #CCCCCC;
-    border-radius: 5px;
-    float: left;
-    margin-left: 15px;
-    padding: 10px 30px;
-    position: relative;
-    width: 100%;
-}
+
 
 .skills h4 {
     width: 100%;
@@ -437,8 +455,70 @@ input.form-control{
 }
 
 
+button.source-code, button.download {
+    text-align: right;
+}
+
+
 /*-------- Footer -----------*/
 
 footer {
     padding: 30px;
+}
+
+
+/*--------- Responsive ------------*/
+
+@media only screen and (max-width: 990px) {
+    a.source-code, a.download {
+        float: left !important;
+        margin-bottom: 10px;
+    }
+
+    div.resume-item, .course {
+        margin-left: 0;
+    }
+
+    div.resume-item.education, div.resume-item.skills {
+        margin-bottom: 10px;
+    }
+
+    div.resume-item.skills {
+        text-align: center;
+    }
+
+    div.resume-item.skills.gen-skills {
+        display: none;
+    }
+
+    div.resume-item.coursework {
+        margin-top: 0px;
+    }
+
+
+    div.contact-info {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    div.contact-form {
+        margin-left: 10%;
+    }
+
+    .input-group {
+        min-width: 90%;
+    }
+
+    textarea.form-control {
+        max-width: 90%;
+    }
+
+    button.send-contact {
+        width: 90%;
+    }
+
+    .error-banner, .success-banner {
+        width: 90%;
+    }
+
 }

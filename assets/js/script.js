@@ -1,16 +1,30 @@
 function main() {
 
+
+    /* -----------------------------------------------------------------------------------
+     * Responsive for the Skills section
+     * -----------------------------------------------------------------------------------*/
+    if ($(window).width() < 990) {
+        var $genSkills = $('div.resume-item.skills .gen-skills');
+        $genSkills.html('');
+
+        $genSkills.first().append('<h4>General</h4> <p>Java, Python, C, Javascript, Android, Bash</p>');
+        $genSkills.first().append('<h4>Databases</h4> <p>MongoDB</p>');
+        $genSkills.first().append('<h4>Web</h4> <p>HTML5/CSS3, jQuery, Node.js, Handlebars.js, Bootstrap</p>');
+        $genSkills.first().append('<h4>Tools</h4> <p>Vim, Eclipse, Webstorm, Wing</p>');
+        $genSkills.first().append('<h4>Version Control</h4> <p>Git, Subversion</p>');
+    }
+
     /* -----------------------------------------------------------------------------------
      * Parallax effect
      * -----------------------------------------------------------------------------------*/
-
-    var $documentElement = $(document);
-    var $parallaxBg = $('header.parallax-bg');
-
-    $documentElement.on('scroll', function() {
-        var currPosition = $documentElement.scrollTop();
-        $parallaxBg.css('background-position', '0 ' + -currPosition/4 + 'px');
+    $(window).load(function(){
+        $('#header').parallax("50%", 0.1);
+        /*$('aside.languages').parallax("40%", 0.1);
+        $('aside.prog-lang').parallax("10%", 0.1);
+        $('aside.hobbies').parallax("40%", 0.1);*/
     });
+
 
 
     /* -----------------------------------------------------------------------------------
