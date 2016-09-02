@@ -7,7 +7,7 @@ function main() {
         var $genSkills = $('div.resume-item.skills .gen-skills');
         $genSkills.html('');
 
-        $genSkills.first().append('<h4>General</h4> <p>Java, Python, C, Javascript, Android, Bash</p>');
+        $genSkills.first().append('<h4>General</h4> <p>Java, Python, C, Javascript, Android, Bash, Verilog, Assembly</p>');
         $genSkills.first().append('<h4>Databases</h4> <p>MongoDB</p>');
         $genSkills.first().append('<h4>Web</h4> <p>HTML5/CSS3, jQuery, Node.js, Handlebars.js, Bootstrap</p>');
         $genSkills.first().append('<h4>Tools</h4> <p>Vim, Eclipse, Webstorm, Wing</p>');

@@ -10,15 +10,19 @@ body {
     letter-spacing: 1px;
 }
 
+
 a {
     text-decoration: none;
     outline:none;
 }
 
-p {
-    padding-bottom: 10px;
+p , ul li{
     line-height: 25px;
     letter-spacing: 0px;
+}
+
+p {
+    padding-bottom: 10px;
 }
 
 li {
@@ -93,7 +97,7 @@ hr {
 
 /*----------------- About -----------------*/
 
-#about a, #portfolio a {
+#about a, #portfolio a, #resume a {
     color: #545454;
 }
 
@@ -114,7 +118,7 @@ hr {
     line-height: 50px;
 }
 
-a.download, a.source-code{
+a.download, a.source-code, a.link-website{
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     background: none;
@@ -246,6 +250,23 @@ aside .panel {
 
 /*------------- Portfolio ---------------*/
 
+
+.pad-top {
+    margin-top: 10px;
+}
+
+#portfolio ul li {
+    list-style: none;
+}
+
+#portfolio ul ul li {
+    list-style: disc;
+}
+
+.inline {
+    display: inline;
+}
+
 #portfolio  {
     padding-top: 50px;
     margin-bottom: 50px;
@@ -266,10 +287,11 @@ aside .panel {
 .project {
     margin-left: 0;
     padding-right: 15px;
+    padding-bottom: 20px;
 }
 
 .thumb-collapse {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .thumbnail {
@@ -334,11 +356,15 @@ a.source-code {
     border-color: #DCB239;
 }
 
-
+a.link-website {
+    margin: 0;
+    margin-right: 5px;
+}
 
 span.in-progress {
     color: #DF744A;
 }
+
 
 /*------------ Resume ----------------*/
 
@@ -470,12 +496,6 @@ input.form-control{
     color: #66AB8C;
 }
 
-
-button.source-code, button.download {
-    text-align: right;
-}
-
-
 /*-------- Footer -----------*/
 
 footer {
@@ -486,6 +506,7 @@ footer {
 /*--------- Responsive ------------*/
 
 @media only screen and (max-width: 990px) {
+
     a.source-code, a.download {
         float: left !important;
         margin-bottom: 10px;
