@@ -250,16 +250,19 @@ aside .panel {
 
 /*------------- Portfolio ---------------*/
 
+#personal-website .project-description {
+    margin-top: 20%;
+}
 
 .pad-top {
     margin-top: 10px;
 }
 
-#portfolio ul li {
+#portfolio #solutions-repo ul li {
     list-style: none;
 }
 
-#portfolio ul ul li {
+#portfolio #solutions-repo ul ul li, #portfolio ul li {
     list-style: disc;
 }
 
@@ -287,7 +290,7 @@ aside .panel {
 .project {
     margin-left: 0;
     padding-right: 15px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 .thumb-collapse {
@@ -506,6 +509,10 @@ footer {
 /*--------- Responsive ------------*/
 
 @media only screen and (max-width: 990px) {
+
+    #personal-website .project-description {
+        margin-top: 0;
+    }
 
     a.source-code, a.download {
         float: left !important;
