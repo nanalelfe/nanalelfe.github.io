@@ -523,8 +523,9 @@ footer {
 }
 
 .error-page img {
-    width: 200px;
-    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 .error-status {
