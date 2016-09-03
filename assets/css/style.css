@@ -250,6 +250,16 @@ aside .panel {
 
 /*------------- Portfolio ---------------*/
 
+.collaborators a {
+    color: #337ab7 !important;
+    text-decoration: none;
+}
+
+.collaborators a:hover {
+    color: #23527c !important;
+    text-decoration: underline;
+}
+
 #personal-website .project-description {
     margin-top: 20%;
 }
@@ -503,6 +513,22 @@ input.form-control{
 
 footer {
     padding: 30px;
+}
+
+
+/*--------- Error page --------*/
+
+.error-page  body{
+    text-align: center;
+}
+
+.error-page img {
+    width: 200px;
+    height: auto;
+}
+
+.error-status {
+    color: #FC4A1A;
 }
 
 

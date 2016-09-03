@@ -1,3 +1,32 @@
-<h1>{{message}}</h1>
-<h2>{{error.status}}</h2>
-<pre>{{error.stack}}</pre>
+<!doctype html>
+
+<html class="error-page">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page not found</title>
+        <!--Bootstrap File-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Pacifico" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+              rel="stylesheet"
+              integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
+              crossorigin="anonymous">
+
+    </head>
+    <body>
+        <h1 class="error-status">{{error.status}}</h1>
+        <img src="../assets/images/cat.jpg" alt="Cute cat" class="img-responsive">
+        <h2>This is embarrassing... but this page does not exist <i class="fa fa-frown-o" aria-hidden="true"></i></h2>
+        <h4>Let's return to the <a href="/">home page</a>!</h4>
+    </body>
+</html>
