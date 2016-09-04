@@ -44,6 +44,11 @@ hr {
     margin-left: 0;
 }
 
+img {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+
+}
+
 /*-------------- Navbar ---------------*/
 
 .navbar {
@@ -67,6 +72,10 @@ hr {
     padding: 0 !important;
     padding-top: 11px !important;
     color: #D1D1D1 !important;
+}
+
+.social-icons:hover {
+    color: #84D8C0 !important;
 }
 
 /*-------------- Cover ------------------*/
@@ -107,9 +116,10 @@ hr {
     color: #545454;
 }
 
-.profile-pic {
+.profile-pic, .contact-pic {
     max-width: 100%;
 }
+
 
 #about {
     padding-top: 50px;
@@ -132,6 +142,11 @@ a.download, a.source-code, a.link-website{
     border-width: medium;
     margin-top: 15px;
 
+}
+
+a.download:hover {
+    background-color: #84D8C0;
+    color: white !important;
 }
 
 #about a.download {
@@ -180,7 +195,7 @@ aside.languages {
 }
 
 aside.prog-lang {
-    background-image: url(../images/emm_college.jpg);
+    background-image: url(../images/robarts.jpg);
     min-height: 400px;
     margin-bottom: 0;
 }
@@ -190,7 +205,7 @@ aside.prog-lang .aside-text {
 }
 
 aside.hobbies{
-    background-image: url(../images/robarts.jpg);
+    background-image: url(../images/emm_college.jpg);
     margin-bottom: 0;
 }
 
@@ -211,8 +226,14 @@ h1.aside-title {
 aside .panel {
     min-height: 600px;
     background-color: rgba(0, 0, 0, 0.4);
+
     margin-bottom: 0;
 }
+
+aside.prog-lang .panel {
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
 
 /*----- Bars ---------*/
 .bars {
@@ -374,15 +395,41 @@ a.source-code {
     border-color: #DCB239;
 }
 
+a.source-code:hover {
+    background-color: #DCB239;
+    color: white !important;
+}
+
 a.link-website {
     margin: 0;
     margin-right: 5px;
+}
+
+a.link-website:hover {
+    background-color: #84D8C0;
+    color: white !important;
 }
 
 span.in-progress {
     color: #DF744A;
 }
 
+
+.carousel-control.right, .carousel-control.left {
+    background: transparent;
+}
+
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+    right: 10px;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+    left: 10px;
+}
+
+.glyphicon {
+    font-size: 25px !important;
+}
 
 /*------------ Resume ----------------*/
 
@@ -447,6 +494,9 @@ button.send-contact {
 
 button.send-contact:hover {
     background-color: #57BC90;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.70);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
+
 }
 
 
@@ -473,7 +523,7 @@ input.form-control{
 }
 
 .contact-info {
-    width: 80%;
+    width: 100%;
 }
 
 .coursework {
@@ -492,6 +542,11 @@ a.social-icons {
     color: #337ab7;
 }
 
+.contact-pic {
+    margin-top: 10px;
+}
+
+
 /*-------- Validation ----------*/
 
 .error-banner, .success-banner {
@@ -499,7 +554,7 @@ a.social-icons {
     border-radius: 5px;
     color: #FC4A1A;
     padding: 10px 30px;
-    width: 70%;
+    width: 80%;
 }
 
 .error-banner {
@@ -544,6 +599,12 @@ footer {
 
 
 /*--------- Responsive ------------*/
+
+@media only screen and (max-width: 1200px) {
+    .contact-pic {
+        margin-top: 45%;
+    }
+}
 
 @media only screen and (max-width: 990px) {
 
@@ -602,4 +663,10 @@ footer {
         width: 90%;
     }
 
+    .contact-pic {
+        margin-top: 30px;
+    }
+
 }
+
+
