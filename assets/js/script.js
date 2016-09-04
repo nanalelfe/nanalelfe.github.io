@@ -58,7 +58,7 @@ function main() {
     /* -----------------------------------------------------------------------------------
      * Enable menu scrolling
      * -----------------------------------------------------------------------------------*/
-    $('body').scrollspy({ target: '.navbar', offset: 70 });
+    $('body').scrollspy({ target: '.navbar', offset: 300 });
 
     $('.scroll-link').on('click', function(event){
         event.preventDefault();

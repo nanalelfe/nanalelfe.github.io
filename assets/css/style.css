@@ -62,6 +62,12 @@ hr {
 
 }
 
+.social-icons {
+    margin-left: 25px;
+    padding: 0 !important;
+    padding-top: 11px !important;
+    color: #D1D1D1 !important;
+}
 
 /*-------------- Cover ------------------*/
 
@@ -169,7 +175,7 @@ aside.prog-lang span.line {
 
 
 aside.languages {
-    background-image: url(../images/roof.jpg);
+    background-image: url(../images/louvre1.png);
 
 }
 
@@ -185,7 +191,6 @@ aside.prog-lang .aside-text {
 
 aside.hobbies{
     background-image: url(../images/robarts.jpg);
-    min-height: 400px;
     margin-bottom: 0;
 }
 
@@ -434,7 +439,7 @@ img.icon {
 button.send-contact {
     text-transform: uppercase;
     font-weight: 600;
-    width: 70%;
+    width: 80%;
     border: none;
     background-color: #57BC90;
 
@@ -446,7 +451,7 @@ button.send-contact:hover {
 
 
 textarea.form-control {
-    max-width: 70%;
+    max-width: 80%;
     border: none;
     border-radius: 0px;
     font-size:15px !important;
@@ -464,7 +469,7 @@ input.form-control{
 }
 
 .input-group {
-    min-width: 70%;
+    min-width: 80%;
 }
 
 .contact-info {
@@ -475,12 +480,16 @@ input.form-control{
     margin-top: 30px;
 }
 
-.social-icons {
-    margin-left: 25px;
+a.social-icons {
+
 }
 
 .social-icons a {
     color: #EAB126;
+}
+
+.email {
+    color: #337ab7;
 }
 
 /*-------- Validation ----------*/
@@ -513,6 +522,7 @@ input.form-control{
 
 footer {
     padding: 30px;
+    text-align: center;
 }
 
 
