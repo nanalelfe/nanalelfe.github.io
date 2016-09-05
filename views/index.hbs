@@ -97,15 +97,15 @@
                         Watching and contributing to products built based on simple scribbles on whiteboard, abstract diagrams and vague
                         ideas are my true calling.
                     </p>
-                    <p>I am currently working, along with my partners, on Solutions.Repo - a project which will help U of T students
+                    <p>I am currently working, along with my partners, on Solutions.Repo - a project that will help U of T students
                         with their exam preparations.
                     </p>
                     <p>I grew up in Europe, mostly London and Paris, where I learned to speak both English and French
-                        fluently, before coming to Toronto at the age of 16. I feel very lucky to have been raised in
+                        fluently before coming to Toronto at the age of 16. I feel very lucky to have been raised in
                         such a diverse environment, and I enjoy observing the similarities and differences between
                         various cultures. I use French, Russian, Uzbek and English interchangeably, and have taken
-                        Spanish in school. As for my hobbies, aside from programming, I enjoy playing the piano, reading French literature
-                        and kayaking.
+                        Spanish in school. As for my hobbies, aside from programming, I enjoy reading French literature,
+                        kayaking and playing the piano.
                     </p>
 
                 </div>
@@ -469,11 +469,11 @@
                         </div>
                     </div>
 
-                    <div class="project collapse" id="tictactoe">
+                    <div class="project collapse" id="game-center">
                         <div class="project-title row">
                             <div class="col-md-6">
                                 <!-- Project Name -->
-                                <h2>Tic Tac Toe - Minimax</h2>
+                                <h2>Game Center: Tippy Game, Subtract Square and Minimax AI</h2>
                             </div>
                             <div class="col-md-6">
                                 <!-- Project Source Code link -->
@@ -486,23 +486,149 @@
                             <div class="col-md-6">
 
                                 <!-- Project Image -->
-                                <img class='img-responsive' src="assets/images/tictactoe.png" alt="Tic Tac Toe">
+                                <div id="game-center-carousel" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#game-center-carousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#game-center-carousel" data-slide-to="1"></li>
+                                        <li data-target="#game-center-carousel" data-slide-to="2"></li>
+                                    </ol>
+
+                                    <div class="carousel-inner" >
+                                        <div class="item active">
+                                            <img src="assets/images/game_center/tippy1.png" alt="Tippy game">
+
+                                        </div>
+                                        <div class="item">
+                                            <img src="assets/images/game_center/tippy2.png" alt="Tippy game">
+
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="assets/images/game_center/tippy3.png" alt="Tippy game">
+
+                                        </div>
+
+                                        <a class="left carousel-control" href="#game-center-carousel" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#game-center-carousel" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+
+                                </div>
                                 <h5 class="collaborators">Collaborators: <a href="https://github.com/HumairAK" target="_blank">Humair Khan</a></h5>
 
                                 <div class="project-description">
                                     <h3>Project Description</h3>
+                                    <p>The project consists of a Game Center which contains two games, each of which
+                                        are two-player, sequential-move, zero-sum and perfect-information:</p>
+
+                                    <h4>
+                                        Tippy Game:
+                                    </h4>
+                                    <p>Tippy game is a variation of the game of Tic-Tac-Tie, where players take turns
+                                        placing either an X or an O on an n x n grid. However, the goal is now to form
+                                        a "tippy" on the grid; in there following examples, X has won by forming
+                                        a tippy:</p>
+                                    <!-- **** Place image here ****/ -->
+                                    <p>Tippies correspond to the green Z and red S tetrominos (AKA tetriminos) from Tetris.
+                                        On a 3 􏰄x 3 grid there are 8 possible tippies, and more on a larger grid.
+                                        Unlike tic-tac-toe there is a winning tippy strategy for whichever player moves first.
+                                        In other words, if the 􏰁first player always chooses the best move, she or he will
+                                        always win the game of tippy. Compare this to the situation in Tic-Tac-Toe where
+                                        if both players choose the best possible move, the result is always a tie.</p>
+
+                                    <h4>Subtract Square</h4>
+                                    <ul>
+                                        <li>A positive whole number is randomly chosen as the starting value by some neutral
+                                            entity. In our case, the computer will choose it randomly.</li>
+                                        <li>The player whose turn it is chooses some square of a positive whole number
+                                            (such as 1, 4, 9, 16, . . . ) to subtract from the value, provided the chosen square
+                                            is not larger. After subtracting, we have a new value and the next player chooses
+                                            a square to subtract from it.</li>
+                                        <li>Play continues to alternate between the two players until no moves are possible.
+                                            Whoever is about to play at that point loses!</li>
+                                    </ul>
+
+                                    <p>The players in the game are the human player and an AI. At the beginning of the game,
+                                        the human player decides what type of AI he/she wants to face, as well as the size of
+                                        the grid.</p>
+
+
                                 </div>
 
                             </div>
 
                             <div class="col-md-6">
+                                <p>There are five types of AIs:</p>
+
+                                <ul>
+                                    <li><h5 class="inline">Random Strategy</h5><span class="inline">: The AI picks moves randomly.</span></li>
+                                    <li><h5 class="inline">Minimax Strategy</h5><span class="inline">: The AI evaluates all of the possible moves, and chooses
+                                            the strongest possible move by picking one that returns the highest score. The
+                                            algorithm does not contain any optimization techniques.</span> </li>
+                                    <li><h5 class="inline">Minimax Memoize</h5><span class="inline">: The AI performs the same operations as the regular Minimax
+                                            Strategy. However, it uses the method of memoization, an optimization
+                                            technique that avoids redundancy by storing the positions it has come across in a dictionary,
+                                            where the position and its corresponding "score" are stored. Hence,
+                                            when the algorithm comes across a position it has already seen, it does not have
+                                            to make another expensive recursive call.</span></li>
+                                    <li><h5 class="inline">Minimax Pruning</h5><span class="inline">: Minimax is presented with a huge tree of game state
+                                            (position) sequences. However, some careful consideration shows that, in
+                                            many situations, Minimax may ignore huge portions of the tree, since the
+                                            position sequences in those portions won't change the outcome of the game.
+                                            Hence, in this technique, minimax is optimized by keeping track of the score
+                                            already guaranteed to each opponent, and abandoning further search whenever
+                                            the score guaranteed for itself is greater than the score guaranteed to
+                                            its opponent. </span></li>
+                                    <li><h5 class="inline">Minimax Myopia</h5><span class="inline">: In this technique, minimax looks ahead of the game by only
+                                            some n moves. If minimax looks ahead n moves and the game has not ended, then it should
+                                            use its best guess to provide a score for that game position. This is not as
+                                            accurate as looking all the way ahead, but saves computational resources.</span> </li>
+                                </ul>
 
                                 <div class="role">
                                     <h3>My Role</h3>
+
+                                    <h3>General</h3>
+                                    <ul>
+                                        <li>Used the inheritance approach to implement a generic Move module, which represents
+                                            a generic move for a two-player, sequential-move, zero-sum and perfect information game. </li>
+                                        <li>Implemented the player's view of the game, including informing them of the
+                                            goal and rules, move prompting, checking if a move is legal, showing what
+                                            the AI has chosen and indicating whether a player has won. </li>
+                                    </ul>
+
+                                    <h3>Tippy Game</h3>
+                                    <ul>
+                                        <li>Implemented the Tippy Game state module, which inherits the generic game state module. </li>
+                                    </ul>
+
+                                    <h3>Subtract Square</h3>
+                                    <ul>
+                                        <li>Implemented the Subtract Square Move module, which inherits the generic Move module.</li>
+                                    </ul>
+
+                                    <h3>AI</h3>
+                                    <ul>
+                                        <li>Worked as a team with my partner and solved the regular Minimax, Minimax Memoization,
+                                            Minimax Pruning and Minimax Mypia AIs. </li>
+                                    </ul>
                                 </div>
 
                                 <div class="experience-gained">
                                     <h3>Experience Gained</h3>
+                                    <ul>
+                                        <li>Python</li>
+                                        <li>Computer game strategies</li>
+                                        <li>Minimax Algorithm Strategy</li>
+                                        <li>Object-Oriented Programming (OOP)</li>
+                                        <li>Inheritance and Abstraction</li>
+                                        <li>Trees, Recursion</li>
+                                    </ul>
                                 </div>
 
                             </div>
@@ -715,15 +841,17 @@
                 <!-- Thumbnail -->
                 <div class="col-sm-6 col-md-6">
                     <a type="button" class="btn btn-info thumb-collapse scroll-link" data-id="projects"
-                       data-toggle="collapse" data-target="#tictactoe">
+                       data-toggle="collapse" data-target="#game-center">
                         <div class="thumbnail">
                             <!-- Project Image -->
-                            <img class='img-responsive' src="assets/images/tictactoe.png" alt="Tic Tac Toe">
+                            <img class='img-responsive' src="assets/images/game_center/tippy1.png" alt="Tippy game">
                             <!-- Project Description -->
                             <div class="caption">
-                                <h3>Tic Tac Toe - Minimax</h3>
-                                <p>A game of multi-columned tic-tac-toe where the human player can either face an AI based on the
-                                    Minimax Algorithm, or another human player.</p>
+                                <h3>Game Center: Tippy Game, Subtract Square and Minimax AI</h3>
+                                <p>A game center containing Tippy Game, a variation of Tic-Tac-Toe,
+                                    and Subtract Square, a game consisting of subtracting a number until it becomes 0.
+                                    The human player has the choice to face an AI based on the Minimax Algorithm.
+                                </p>
                             </div>
                         </div>
                     </a>
