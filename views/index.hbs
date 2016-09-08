@@ -92,7 +92,7 @@
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-6">
                     <p>I am a third year U of T student pursuing a Bachelor's degree in Computer Science with a focus in
-                        Computer Systems and Artificial Intelligence. I am passionate about robots, AI and virtual reality,
+                        Computer Systems and Artificial Intelligence. I am passionate about robots, AI and Game Design,
                         as well as learning in general.
                         Watching and contributing to products built based on simple scribbles on whiteboard, abstract diagrams and vague
                         ideas are my true calling.
@@ -529,17 +529,15 @@
                                     <h4>
                                         Tippy Game:
                                     </h4>
-                                    <p>Tippy game is a variation of the game of Tic-Tac-Tie, where players take turns
-                                        placing either an X or an O on an n x n grid. However, the goal is now to form
-                                        a "tippy" on the grid; in there following examples, X has won by forming
-                                        a tippy:</p>
+                                    <p>Tippy is a variation of tic-tac-toe. Players take turns placing either an X or an O
+                                        on an nxn grid (where n is at least 3, and is specified by the player before
+                                        game-start). Tippies correspond to the Z and S tetrominos (aka tetriminos)
+                                        from tetris. On a 3 x 3 grid there are 8 possible tippies, and more on a larger grid.</p>
                                     <!-- **** Place image here ****/ -->
-                                    <p>Tippies correspond to the green Z and red S tetrominos (AKA tetriminos) from Tetris.
-                                        On a 3 􏰄x 3 grid there are 8 possible tippies, and more on a larger grid.
-                                        Unlike tic-tac-toe there is a winning tippy strategy for whichever player moves first.
-                                        In other words, if the 􏰁first player always chooses the best move, she or he will
-                                        always win the game of tippy. Compare this to the situation in Tic-Tac-Toe where
-                                        if both players choose the best possible move, the result is always a tie.</p>
+                                    <p>Unlike Tic-tac-toe there is a winning tippy strategy for whichever player moves first.
+                                        In other words, if the first player always chooses the best move, her or she will always
+                                        win the game of tippy. Compare this to the situation in tic-tac-toe where if both
+                                        players choose the best possible move, the result is always a tie.</p>
 
                                     <h4>Subtract Square</h4>
                                     <ul>
@@ -576,7 +574,7 @@
                                             where the position and its corresponding "score" are stored. Hence,
                                             when the algorithm comes across a position it has already seen, it does not have
                                             to make another expensive recursive call.</span></li>
-                                    <li><h5 class="inline">Minimax Pruning</h5><span class="inline">: Minimax is presented with a huge tree of game state
+                                    <li><h5 class="inline">Minimax Pruning (Alpha-Beta Pruning)</h5><span class="inline">: Minimax is presented with a huge tree of game state
                                             (position) sequences. However, some careful consideration shows that, in
                                             many situations, Minimax may ignore huge portions of the tree, since the
                                             position sequences in those portions won't change the outcome of the game.
@@ -593,7 +591,7 @@
                                 <div class="role">
                                     <h3>My Role</h3>
 
-                                    <h3>General</h3>
+                                    <h4>General</h4>
                                     <ul>
                                         <li>Used the inheritance approach to implement a generic Move module, which represents
                                             a generic move for a two-player, sequential-move, zero-sum and perfect information game. </li>
@@ -602,17 +600,17 @@
                                             the AI has chosen and indicating whether a player has won. </li>
                                     </ul>
 
-                                    <h3>Tippy Game</h3>
+                                    <h4>Tippy Game</h4>
                                     <ul>
                                         <li>Implemented the Tippy Game state module, which inherits the generic game state module. </li>
                                     </ul>
 
-                                    <h3>Subtract Square</h3>
+                                    <h4>Subtract Square</h4>
                                     <ul>
                                         <li>Implemented the Subtract Square Move module, which inherits the generic Move module.</li>
                                     </ul>
 
-                                    <h3>AI</h3>
+                                    <h4>AI</h4>
                                     <ul>
                                         <li>Worked as a team with my partner and solved the regular Minimax, Minimax Memoization,
                                             Minimax Pruning and Minimax Mypia AIs. </li>
