@@ -781,7 +781,94 @@
 
                             </div>
                         </div>
+                    </div>
+                    <div class="project collapse" id="vacuum-race">
+                        <div class="project-title row">
+                            <div class="col-md-6">
+                                <h2>The Great Vacuum Game</h2>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- Project Source Code link -->
+                                <a href="https://github.com/nanalelfe/vacuum_race" target="_blank" type="button" class="btn btn-lg
+                                    source-code pull-right" type="submit"><i class="fa fa-code" aria-hidden="true"></i> Source Code</a>
+                            </div>
                         </div>
+                        <div class='row'>
+                            <div class="col-md-6">
+
+                                <!-- Project Image -->
+                                <img class='img-responsive' src="assets/images/vacuum_game_1.png" alt="The Great Vacuum Race">
+
+                                <div class="project-description">
+                                    <h3>Project Description</h3>
+                                    <p>The game board is a 2-dimensional grid. Each cell in this grid represents either
+                                        a section of hallway, a piece of wall, or a dumpster. There are two players in
+                                        this game — two vacuums. Some of the cells are dirty: they contain dirt or dustballs.
+                                        The vacuums’ objective is to clean up as many dirty cells as possible. The dirt
+                                        is stationary, but the dustballs move about the grid and each cell that a dustball
+                                        visits becomes dirty (if it wasn’t already) when the dustball leaves. The image
+                                        above shows the initial state of the vacuum game. Notice the two vacuums,
+                                        16 dirty cells, four dustballs, and three dumpsters.</p>
+
+                                    <p>Vacuum 1 moves left when the user presses the 'a' key, moves right on the 'd' key,
+                                        moves up on the 'w' key and moves down on the 's' key. Similarly, vacuum 2 moves
+                                        left on the 'j' key, moves right on the 'l' key, moves up on the 'i' key and
+                                        moves down on the 'k' key.</p>
+
+                                    <p>A vacuum cannot move onto the other vacuum (or a wall, of course), but can move
+                                        onto dirt, a dust ball, a dumpster (or clean hallway, of course). After a vacuum
+                                        moves, if there are dustballs, they move randomly.
+                                    </p>
+                                    <p>Each time a vacuum cleans dirt, the vacuum’s score is incremented; the vacuum
+                                        earns 1 point for cleaning a dirt, and 2 points for cleaning a dustball.</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6">
+
+
+                                <p>Each vacuum has a capacity. Cleaning up dirt or a dustball adds a constant amount
+                                    to the fullness of the vacuum. When a vacuum becomes full, it cannot clean any
+                                    more dirt; it can still go to dirty hallways, but it has no effect on the dirt
+                                    that is there. A vacuum that enters a cell with a dumpster is emptied (i.e., it
+                                    has zero fullness); thus, if a vacuum is full, in order to resume cleaning dirt,
+                                    it must visit a dumpster. Dumpsters have no limit on their capacity.
+                                    The game ends when all dirt (including dustballs) is gone. The vacuum with the
+                                    higher score wins, or, if the two scores are equal, we declare a tie.</p>
+                                <div class="role">
+                                    <h3>My Role</h3>
+                                    <p>My role was to implement the whole game, including: </p>
+                                    <ul>
+                                        <li>Vacuum Game class, where a Grid of Sprites is stored and manipulated.</li>
+                                        <li>The Grid interface, which keeps track of all the Sprite locations.</li>
+                                        <li>ArrayGrid, an implementation of the Grid interface.</li>
+                                        <li>Sprite abstract class, which represents a sprite in the Vacuum game.</li>
+                                        <li>Moveable interface, which represents a moveable object in the game.</li>
+                                        <li>All the sprite classes inheriting the Sprite class - Wall, Dumpster,
+                                            CleanHallway, Vacuum, Dirt, Dustball. The Vacuum and Dustball classes also
+                                            implement the Moveable interface, since they move throughout the game.</li>
+                                        <li>Play class, which starts the game.</li>
+                                    </ul>
+                                </div>
+
+
+                                <div class="experience-gained">
+                                    <h3>Experience Gained</h3>
+                                    <ul>
+                                        <li>Java</li>
+                                        <li>Object-Oriented Programming (OOP)</li>
+                                        <li>Inheritance</li>
+                                        <li>UML and OO design</li>
+                                        <li>Abstract Classes, Interfaces</li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -859,6 +946,22 @@
                 <!-- Thumbnail -->
                 <div class="col-sm-6 col-md-6">
                     <a type="button" class="btn btn-info thumb-collapse scroll-link" data-id="projects"
+                       data-toggle="collapse" data-target="#vacuum-race">
+                        <div class="thumbnail">
+                            <!-- Project Image -->
+                            <img class='img-responsive' src="assets/images/vacuum_game.png" alt="The Great Vacuum Race">
+                            <!-- Project Description -->
+                            <div class="caption">
+                                <h3>The Great Vacuum Race</h3>
+                                <p>A two-player game where each player (vacuum) needs to earn as many points as possible
+                                    by collecting dust.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Thumbnail -->
+                <div class="col-sm-6 col-md-6">
+                    <a type="button" class="btn btn-info thumb-collapse scroll-link" data-id="projects"
                        data-toggle="collapse" data-target="#nyt-api">
                         <div class="thumbnail">
                             <!-- Project Image -->
@@ -872,7 +975,11 @@
                         </div>
                     </a>
                 </div>
+
                 <!-- Thumbnail -->
+
+            </div>
+            <div class="row thumbnails">
                 <div class="col-sm-6 col-md-6">
                     <a type="button" class="btn btn-info thumb-collapse scroll-link" data-id="projects"
                        data-toggle="collapse" data-target="#personal-website">
@@ -889,7 +996,6 @@
                     </a>
                 </div>
             </div>
-
 
 
         </div>
@@ -1030,8 +1136,9 @@
                                 <h4>CSC309</h4>
                                 <h5>Programming on the Web</h5>
                                 <h6>Grade: A</h6>
-                                <p class="small">An introduction to software development on the web. Operational concepts of the internet and the web,
-                                    static client content, dynamic client content, dynamically served content, n-tiered architectures,
+                                <p class="small">An introduction to software development on the web. Operational concepts
+                                    of the internet and the web, static client content, dynamic client content,
+                                    dynamically served content, n-tiered architectures,
                                     web development processes, and security on the web.</p>
                             </div>
 
@@ -1134,7 +1241,8 @@
                     <div class="row contact-info">
                         <div class="col-sm-12 col-md-4">
                             <div class="img-middle">
-                                <img class="center-block contact-pic img-responsive" src="assets/images/nana1.jpg" alt="Nana's Profile Picture">
+                                <img class="center-block contact-pic img-responsive" src="assets/images/nana1.jpg"
+                                     alt="Nana's Profile Picture">
                             </div>
 
                         </div>
