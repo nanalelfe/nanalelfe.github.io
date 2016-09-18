@@ -236,7 +236,7 @@ aside .panel {
     margin-bottom: 0;
 }
 
-aside.prog-lang .panel, aside.languages .panel` {
+aside.prog-lang .panel, aside.languages .panel {
     background-color: rgba(0, 0, 0, 0.55);
 }
 
@@ -328,6 +328,7 @@ aside.prog-lang .panel, aside.languages .panel` {
     position: relative;
     width: 100%;
 }
+
 
 .project {
     margin-left: 0;
@@ -473,8 +474,6 @@ span.in-progress {
 
 }
 
-
-
 .skills h4 {
     width: 100%;
     padding-bottom: 0;
@@ -499,14 +498,28 @@ img.icon {
     text-align: center;
 }
 
-.row-two, .row-three {
+.course a.btn {
+    padding: 0;
+}
+
+.course a.btn:focus {
+    text-decoration: none;
+    outline:none;
+    border: none;
+    box-shadow: none;
+}
+
+.row-middle, .row-last {
     margin-top: 25px;
 }
 
-.row-three {
+.row-last {
     margin-bottom: 15px;
 }
 
+h6.currently-enrolled {
+    color: #DF744A;
+}
 
 /*------------ Contact ---------------*/
 

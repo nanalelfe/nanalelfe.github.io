@@ -1,6 +1,22 @@
 function main() {
 
     /* -----------------------------------------------------------------------------------
+     * Toggle chevrons on the Coursework section
+     * -----------------------------------------------------------------------------------*/
+
+    $('.course div.collapse').on('shown.bs.collapse', function(e) {
+        var $clicked = $(e.target);
+        var id = $clicked.attr('id');
+        $("a[href*=" + id + "] i").addClass('fa-chevron-up').removeClass('fa-chevron-down');
+    });
+
+    $('.course div.collapse').on('hidden.bs.collapse', function(e) {
+        var $clicked = $(e.target);
+        var id = $clicked.attr('id');
+        $("a[href*=" + id + "] i").addClass('fa-chevron-down').removeClass('fa-chevron-up');
+    });
+
+    /* -----------------------------------------------------------------------------------
      * Turn off carousel auto sliding
      * -----------------------------------------------------------------------------------*/
     $('.carousel').carousel({
