@@ -132,6 +132,10 @@ img {
     padding-bottom: 50px;
 }
 
+#about .text {
+    margin-top: 70px;
+}
+
 .about-title h1, .portfolio-title h1, .resume-title h1, .contact-title h1{
     text-transform: uppercase !important;
     font-weight: 500;
@@ -147,12 +151,19 @@ a.download, a.source-code, a.link-website{
     border-color: #84D8C0;
     border-width: medium;
     margin-top: 15px;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
 
 }
 
 a.download:hover {
     background-color: #84D8C0;
     color: white !important;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.3s;
+
 }
 
 #about a.download {
@@ -162,7 +173,7 @@ a.download:hover {
 /*------------ Asides ----------------------*/
 
 aside {
-    min-height: 600px;
+    max-height: 600px;
     text-align: center;
     background-size: cover;
     background-position: center;
@@ -211,6 +222,7 @@ aside.prog-lang .aside-text {
 }
 
 aside.hobbies{
+    max-height: 400px;
     background-image: url(../images/emm_college.jpg);
     margin-bottom: 0;
 }
@@ -404,6 +416,8 @@ a.source-code {
 a.source-code:hover {
     background-color: #DCB239;
     color: white !important;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.3s;
 }
 
 a.link-website {
@@ -414,6 +428,8 @@ a.link-website {
 a.link-website:hover {
     background-color: #84D8C0;
     color: white !important;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.3s;
 }
 
 span.in-progress {
@@ -544,6 +560,10 @@ button.send-contact {
     width: 80%;
     border: none;
     background-color: #57BC90;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
 
 }
 
@@ -551,6 +571,8 @@ button.send-contact:hover {
     background-color: #57BC90;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.70);
     text-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
+    -webkit-transition-duration: 0.1s; /* Safari */
+    transition-duration: 0.1s;
 
 }
 
@@ -657,7 +679,7 @@ footer {
 
 @media only screen and (max-width: 1480px) {
     .cover-img {
-        min-height: 650px;
+        min-height: 550px;
     }
 }
 
@@ -665,7 +687,9 @@ footer {
     .contact-pic {
         margin-top: 45%;
     }
+
 }
+
 
 @media only screen and (max-width: 990px) {
 
