@@ -38,7 +38,7 @@ router.post('/contact', function(req, res, next) {
               user: 'solutionsrepo0@gmail.com',
               pass: 'lamptable'
           }
-      });
+      });p
       var company = '';
       if (req.body.company) {
           company = ' from ' + req.body.company;
